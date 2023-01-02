@@ -191,6 +191,7 @@ export default {
       },
       timer: 0,
       countState: 0,
+      result: false
     };
   },
   computed: {
@@ -452,7 +453,7 @@ export default {
 
       if (this.penddingList.length >= 7) {
         this.step = 2;
-        this.result = true;
+        this.result = false;
       }
     },
     // 点击卡片
